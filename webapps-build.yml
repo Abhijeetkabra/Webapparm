@@ -15,5 +15,5 @@ steps:
     connection: 'GitHub connection'
     userRepository: 'savageidrish/ARMTemplates'
     defaultVersionType: 'latest'
-    itemPattern: '*.json'
+    itemPattern: '**'
     downloadPath: '$(System.ArtifactsDirectory)'
