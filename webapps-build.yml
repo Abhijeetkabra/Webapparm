@@ -13,5 +13,5 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(system.defaultworkingdirectory)'
-    Contents: '**'
+    Contents: '**.json'
     TargetFolder: '$(build.artifactstagingdirectory)'
