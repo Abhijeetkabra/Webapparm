@@ -1,19 +1,17 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- none
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: DownloadGitHubRelease@0
+- task: CopyFiles@2
   inputs:
-    connection: 'GitHub connection'
-    userRepository: 'savageidrish/ARMTemplates'
-    defaultVersionType: 'latest'
-    itemPattern: '**'
-    downloadPath: '$(System.ArtifactsDirectory)'
+    SourceFolder: '$(system.defaultworkingdirectory)'
+    Contents: '**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
