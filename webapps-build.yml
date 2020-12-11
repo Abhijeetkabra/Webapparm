@@ -10,8 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: CopyFiles@2
+- task: DownloadGitHubRelease@0
   inputs:
-    SourceFolder: '''$(Build.SourcesDirectory)'''
-    Contents: '**'
-    TargetFolder: '''$(Build.ArtifactStagingDirectory)'''
+    connection: 'GitHub connection'
+    userRepository: 'savageidrish/ARMTemplates'
+    defaultVersionType: 'latest'
+    downloadPath: '$(System.ArtifactsDirectory)'
