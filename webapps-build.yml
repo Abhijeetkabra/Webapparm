@@ -15,9 +15,9 @@ steps:
     connection: 'GitHub connection'
     userRepository: 'savageidrish/ARMTemplates'
     defaultVersionType: 'latest'
-    downloadPath: '$(System.ArtifactsDirectory)'
+    downloadPath: '$(system.defaultworkingdirectory)'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '(System.ArtifactsDirectory)'
+    SourceFolder: '(system.defaultworkingdirectory)'
     Contents: '*.json'
     TargetFolder: '$(build.artifactstagingdirectory)'
