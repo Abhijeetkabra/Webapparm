@@ -16,6 +16,5 @@ steps:
     project: '067e64f4-8dbb-45ee-9f23-baa9ede9fc4b'
     pipeline: '3'
     buildVersionToDownload: 'latest'
-    downloadType: 'single'
-    artifactName: 'WebappsARM'
+    downloadType: 'specific'
     downloadPath: '$(System.ArtifactsDirectory)'
