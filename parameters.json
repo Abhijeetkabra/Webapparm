@@ -6,7 +6,7 @@
             "value": "2820a7ce-23ca-4544-81ec-2e0291436339"
         },
         "name": {
-            "value": "idrgamutkart"
+            "value": "gamutkart"
         },
         "location": {
             "value": "Central US"
@@ -20,23 +20,8 @@
         "alwaysOn": {
             "value": false
         },
-        "sku": {
-            "value": "Free"
-        },
-        "skuCode": {
-            "value": "F1"
-        },
-        "workerSize": {
-            "value": "0"
-        },
-        "workerSizeId": {
-            "value": "0"
-        },
-        "numberOfWorkers": {
-            "value": "1"
-        },
         "linuxFxVersion": {
-            "value": "TOMCAT|9.0-java11"
+            "value": "JAVA|11-java11"
         }
     }
 }
