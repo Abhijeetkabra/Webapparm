@@ -20,8 +20,23 @@
         "alwaysOn": {
             "value": false
         },
+        "sku": {
+            "value": "Free"
+        },
+        "skuCode": {
+            "value": "F1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "workerSizeId": {
+            "value": "0"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
         "linuxFxVersion": {
-            "value": "JAVA|11-java11"
+            "value": "TOMCAT|9.0-java11"
         }
     }
 }
