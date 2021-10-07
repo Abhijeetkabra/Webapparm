@@ -3,19 +3,19 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "subscriptionId": {
-            "value": "2820a7ce-23ca-4544-81ec-2e0291436339"
+            "value": "2ba8e42d-6007-4ecb-874e-c92edefc1377"
         },
         "name": {
-            "value": "idrgamutkart"
+            "value": "Webapparm0610"
         },
         "location": {
-            "value": "Central US"
+            "value": "East US"
         },
         "hostingPlanName": {
-            "value": "ASP-gamutkarttest-8fba"
+            "value": "Webapparm-service-plan"
         },
         "serverFarmResourceGroup": {
-            "value": "gamutkart_test"
+            "value": "ARMRG"
         },
         "alwaysOn": {
             "value": false
